@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article · My Blog</title>
+  <meta name="description" content="文章详情">
+  <link rel="stylesheet" href="css/style.css">
+  <link id="hljs-theme" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github.min.css">
+</head>
+<body>
+
+<!-- ========== Header ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-brand" href="index.html">
+      <svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+      <span class="label">My Blog</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">文章</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M9.598 1.591a.75.75 0 0 1 .785-.175 7.001 7.001 0 1 1-8.967 8.967.75.75 0 0 1 .961-.96 5.5 5.5 0 0 0 7.045-7.046.75.75 0 0 1 .176-.786Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== Main ========== -->
+<main class="container">
+
+  <div class="article-header">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h8.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg>
+      返回文章列表
+    </a>
+    <h1 class="article-title" id="article-title">Loading...</h1>
+    <div class="article-meta">
+      <span id="article-date">—</span>
+      <span class="card-tag" id="article-language"></span>
+      <div id="article-tags" class="card-tags"></div>
+    </div>
+  </div>
+
+  <article id="article-content">
+    <div class="loading">Loading article...</div>
+  </article>
+
+</main>
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+  <p>© 2026 · Built with ♥ using vanilla HTML/CSS/JS · Deploy on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+</footer>
+
+<!-- marked.js -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<!-- highlight.js -->
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+<!-- 文章数据 -->
+<script src="js/articles.js"></script>
+<!-- 主逻辑 -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
